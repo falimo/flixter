@@ -26,7 +26,7 @@ class Instructor::CoursesController < ApplicationController
       render plain: "Unauthorized", status: :unauthorized
     end
   end
-  
+
 
 
   helper_method :current_course
@@ -36,7 +36,7 @@ class Instructor::CoursesController < ApplicationController
 
   
   def course_params
-    params.require(:course).permit(:title, :description, :cost)
+    params.require(:course).permit(:title, :description, :cost, :image)
   end
 
 end
