@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20170810121725) do
     t.text     "description"
     t.decimal  "cost"
     t.integer  "user_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.string   "image_string"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "image"
     t.index ["user_id"], name: "index_courses_on_user_id", using: :btree
   end
 
