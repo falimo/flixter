@@ -13,6 +13,7 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def update
+    #byebug
     current_lesson.update_attributes(lesson_params)
     render plain: 'updated!'
   end
